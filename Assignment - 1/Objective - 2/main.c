@@ -35,36 +35,42 @@ int main(){
         }
 
         switch (choice) {
-            case 1:
+            case 1: {
                 int MaxIndex = findMaxIndex(arr, size);
                 printf("\nGreatest number - %d\nIndex - %d", arr[MaxIndex], MaxIndex);
                 break;
+            }
 
-            case 2:
+            case 2: {
                 int MinIndex = findMinIndex(arr, size);
                 printf("\nSmallest number - %d\nIndex - %d", arr[MinIndex], MinIndex);
                 break;
+            }
             
-            case 3:
+            case 3: {
                 float Average = findAverage(arr, size);
                 printf("\nThe average of this array is: %g", Average);
                 break;
+            }
 
-            case 4:
+            case 4:{
                 displayArray(arr, size);
                 break;
+            }
 
-            case 5:
+            case 5: {
                 reverseArray(arr, size);
                 displayArray(arr, size);
                 break;
+            }
 
-            case 6:
+            case 6: {
                 sortArray(arr, size);
                 displayArray(arr, size);
                 break;
+            }
 
-            case 7:
+            case 7: {
                 printf("Enter the number to search: ");
                 scanf("%d", &searchValue);
 
@@ -75,6 +81,7 @@ int main(){
                     printf("The index of %d in the array is: %d", searchValue, searchResultIndex);
                 }
                 break;
+            }
 
             default:
                 printf("Invalid choice! Please select between 1-8.\n");
